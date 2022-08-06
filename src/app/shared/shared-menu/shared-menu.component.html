@@ -1,0 +1,34 @@
+
+<!-- Navbar from bootstrap v4 -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-muted ">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"
+            *ngFor="let item of menuPrincipal; let i = index">
+
+            <a class="nav-link" [routerLink]="item.path">{{item.name}} <span class="sr-only">(current)</span></a>
+        </li>
+
+
+        <!-- Here de dropdown button in the navbar -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Search
+          </a>
+          <div class="dropdown-menu menu-desplegado" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" 
+                *ngFor="let item of menuDropdown"
+                [routerLink]="item.path">{{item.name}}</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,18 @@
+<div class="video-principal-container">
+
+    <div class="video-header container">
+        <h1>Daily videos</h1>
+        <p class="subtitle">Videos selected by the pexels team</p>
+    </div>
+
+    
+
+    <div *ngIf="videosRecibidos.length != 0">
+        <app-tarjeta-video [videosRecibidos]="videosRecibidos"></app-tarjeta-video>
+       </div>
+         
+      <div *ngIf="videosRecibidos.length == 0">
+        <app-spinner></app-spinner>
+      </div>
+    
+</div>

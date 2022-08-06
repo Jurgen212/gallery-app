@@ -1,0 +1,19 @@
+<div class="contenedor">
+    <div    class="video-target-container"
+            *ngFor="let video of videosRecibidos; let i = index">
+            <hr>
+        <p class="creator_name_container">Creator: <span> {{ video.user.name }}</span></p>
+
+        <video  class="video-container"
+                [src]   =" video.video_files[3].link "
+                [poster]=" video.video_pictures[0].picture"
+                controls=true></video>
+
+        <a class="ver_original_container"
+            [href]=" video.url "
+            target="_blank"> Ver original...</a>
+
+            
+    </div>
+    
+</div>

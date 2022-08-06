@@ -1,0 +1,20 @@
+<div class="photos-principal">
+    <div class="photo-header container">
+        <h1>Daily pictures</h1>
+        <p class="subtitle">Photos selected by the pexels team</p>
+    </div>
+
+    <div *ngIf="imagenesRecibidas.length != 0; else noRecibidas">
+     <app-tarjetas [imagenesRecibidas]="imagenesRecibidas"></app-tarjetas>
+    </div>
+
+    <ng-template #noRecibidas>
+        <app-spinner></app-spinner>
+    </ng-template>
+    
+    
+</div>
+
+
+
+

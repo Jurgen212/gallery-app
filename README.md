@@ -1,6 +1,19 @@
 # GaleriaApp
 
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+
+
+- Web application created to view images uploaded by the pexels.com team and a search engine to navigate through its image bank
+
+- Created as a personal project to practice making up a third-party api
+
+- Visually it is not very pretty since the priority was the practice of the angular framework
+
+### Angular info
+
+- Remember put the command npm init 
 
 ## Development server
 

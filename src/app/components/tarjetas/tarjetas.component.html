@@ -1,0 +1,11 @@
+<div class="container div-father">
+    <div class="target-contain"
+         *ngFor="let item of imagenesRecibidas">
+
+        <p class="photographer-contain">Photographer: {{ item.photographer }}</p>
+        <img    class="img-fluid"
+                [src]=" item.src.original"
+                target="_blank">
+        <a  [href]=" item.url">See the original</a>
+    </div>
+</div>

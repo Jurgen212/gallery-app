@@ -1,0 +1,27 @@
+.video-principal-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-header{
+    padding-top: 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 30vh;
+    width: 100%;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.subtitle{
+    font-size: 30px;
+    font-weight: 100;
+}
